@@ -10,6 +10,7 @@
         <tr>
             <td>{{task.title}}</td>
             <td><a href="{% url 'task' task.id %}">View</a></td>
+            <td><a href="{% url 'update-task' task.id %}">Edit</a></td>
         </tr>
     {% empty %}
      <H3> No items in list</H3>
