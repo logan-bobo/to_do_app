@@ -6,7 +6,8 @@ from .views import (
     TaskCreate,
     TaskUpdate,
     TaskDelete,
-    UserLogin
+    UserLogin,
+    Register,
 )
 
 urlpatterns = [
@@ -21,6 +22,7 @@ urlpatterns = [
 
     # User Authentication Views
     path('login/', UserLogin.as_view(), name='user-login'),
-    path('logout/', LogoutView.as_view(next_page='user-login'), name='user-logout')
+    path('logout/', LogoutView.as_view(next_page='user-login'), name='user-logout'),
+    path('register/', Register.as_view(), name='user-register'),
 ]
 
