@@ -1,3 +1,6 @@
+{% extends 'to_do/base.html' %}
+{% block content %}
+
 <h1>Register</h1>
 
 <form method="POST">
@@ -7,3 +10,5 @@
 </form>
 
 <a href="{% url 'user-login' %}">Login</a>
+
+{% endblock content %}
