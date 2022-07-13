@@ -23,4 +23,3 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(next_page='user-login'), name='user-logout'),
     path('register/', Register.as_view(), name='user-register'),
 ]
-
